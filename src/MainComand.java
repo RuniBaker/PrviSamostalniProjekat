@@ -3,22 +3,24 @@ import java.util.Scanner;
 public class MainComand {
     public static void main(String[] args) {
         String username = "John Doe";
-        String password = "JohnDoe";
-
+        
+        //Username:"John Doe";
+        //Password:"JohnDoe";
+        
         System.out.println("Unesite Vaš Username");
-        Scanner UsernameScan = new Scanner(System.in);
+        Scanner usernameScan = new Scanner(System.in);
         System.out.println("Unesite Vaš Password");
-        Scanner PasswordScan = new Scanner(System.in);
+        Scanner passwordScan = new Scanner(System.in);
 
-        String usernameInput = UsernameScan.nextLine();
-        String PasswordInput = PasswordScan.nextLine();
+        String usernameInput = usernameScan.nextLine();
+        String passwordInput = passwordScan.nextLine();
 
-        if(usernameInput.equals ("John Doe") && PasswordInput.equals ("JohnDoe")){
+        if(usernameInput.equals ("John Doe") && passwordInput.equals ("JohnDoe")){
             System.out.println("Dobro došli na Vaš profil " + username);
         }else{
             System.out.println("Username ili lozinka koju ste unijeli je pogrešna,pokušajte ukucati ponovo");
         }
-        if(usernameInput.equals ("John Doe") && PasswordInput.equals ("JohnDoe")){
+        if(usernameInput.equals ("John Doe") && passwordInput.equals ("JohnDoe")){
         System.out.println("Odaberite predmet iz kog želite vidjeti ocjene");
         System.out.println("Njemački - 1");
         System.out.println("Bosanski - 2");
